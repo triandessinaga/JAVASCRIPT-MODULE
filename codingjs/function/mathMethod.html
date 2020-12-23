@@ -7,11 +7,16 @@
 </head>
 <body>
     <h1>Math Method</h1>
+    <p>this for Math.max</p>
     <p id="math"></p>
+<br>
+    <p> this is for Math.max.apply</p>
+    <p id="mathapply"></p>
 
     <script>
 
         document.getElementById('math').innerHTML=Math.max(1,2,3,4,5,6);
+        document.getElementById('mathapply').innerHTML= Math.max.apply(null)
     </script>
     
 </body>

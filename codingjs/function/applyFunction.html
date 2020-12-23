@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Aply function</h1>
+    <p id="apply"></p>
+
+    <script>
+
+        var person ={
+            fullname : function(city,country){
+                return this.firstName+ " " +this.lastName + ","+ city +","+country;
+            }
+        }
+
+        var person1 = {
+            firstName: "riama",
+            lastName:'hita sude'
+        }
+
+        var x = person.fullname.apply(person1,['medan','indonesia']);
+        document.getElementById('apply').innerHTML= x;
+    </script>
+    
+</body>
+</html>

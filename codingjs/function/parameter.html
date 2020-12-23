@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Javascript Parameter</h1>
+    <p id="param"></p>
+
+
+    <script>
+
+        // defaultparameter
+
+        function myVar(a,b){
+            if(b==undefined){
+                b=2;
+            }
+            return a*b;
+        }
+
+        document.getElementById('param').innerHTML= myVar(8);
+        
+    </script>
+    
+</body>
+</html>

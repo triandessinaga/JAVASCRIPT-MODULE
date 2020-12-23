@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Call Function With Argument</h1>
+    <p id="call"></p>
+
+    <script>
+
+        var manusia = {
+            fullName: function(city,country){
+                return this.fullName + " "+ this.lastName + "," +city + ","+ country;
+            }
+        }
+        var man1 ={
+            firstName: "mona",
+            lastName:"lisa"
+        }
+
+        var man2 = {
+            firstName: "dinu",
+            lastName:"akhiar"
+        }
+        var x = manusia.fullName.call(man2,"medan","indonesia");
+        document.getElementById('call').innerHTML = x;
+    </script>
+
+    
+</body>
+</html>

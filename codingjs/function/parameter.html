@@ -15,15 +15,24 @@
 
         // defaultparameter
 
-        function myVar(a,b){
-            if(b==undefined){
-                b=2;
-            }
+        // function myVar(a,b){
+        //     if(b==undefined){
+        //         b=2;
+        //     }
+        //     return a*b;
+        // }
+
+        // document.getElementById('param').innerHTML= myVar(8);
+
+        // ecma script 2015
+
+
+        function myvar(a,b=5){
             return a*b;
         }
+      
+        document.getElementById('param').innerHTML= myvar(10);
 
-        document.getElementById('param').innerHTML= myVar(8);
-        
     </script>
     
 </body>

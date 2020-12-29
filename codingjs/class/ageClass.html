@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Age Class</h1>
+    <p id="class"></p>
+
+    <script>
+
+        class car{
+            constructor(name,year){
+                this.name= name;
+                this.year=year;
+            }
+            age(x){
+                return x-this.year;
+            }
+        }
+
+        let myCar = new car('masda',2000);
+        document.getElementById('class').innerHTML= myCar.age()+" years old";
+    </script>
+    
+</body>
+</html>

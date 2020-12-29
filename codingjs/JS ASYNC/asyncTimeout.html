@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>set time out in javascript</p>
+    <h1 id="async"></h1>
+
+    <script>
+        setTimeout(function(){myfungsi('this is async');},1500);
+
+        function myfungsi(nilai){
+            document.getElementById('async').innerHTML = nilai;
+        }
+
+    </script>
+    
+</body>
+</html>

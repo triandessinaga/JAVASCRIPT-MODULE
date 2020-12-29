@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Static</h1>
+    <p id="static"></p>
+
+
+    <script>
+       class Car{
+           constructor(name){
+               return this.name= name;
+           }
+           static hello(x){
+               return "Hello "+ " "+x.name;
+           }
+       }
+
+       let myCar = new Car ("mitsubishi");
+
+       document.getElementById('static').innerHTML=Car.hello(myCar);
+
+    </script>
+    
+</body>
+</html>

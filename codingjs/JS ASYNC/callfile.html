@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Call file</p>
+    <p id="file"></p>
+
+    <script>
+        function display(data){
+            document.getElementById('file').innerHTML= data;
+        }
+
+        function getfile(callback){
+            let req = new XMLHttpRequest();
+            req.open('GET','mycar.html');
+            req.onload=function(){
+                if(req.status==200){
+                    callback(this.responseText);
+
+                }else{
+                    callback("error:" + req.status);
+                }
+            }
+            req.send();
+        }
+
+        getfile(display);
+    </script>
+    
+</body>
+</html>

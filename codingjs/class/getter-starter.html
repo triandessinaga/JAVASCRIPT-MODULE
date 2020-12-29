@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> Coding life gettter inheritance</h1>
+    <p id="inherit"></p>
+
+
+
+    <script>
+
+        class car {
+
+            constructor(brand){
+                return this.name = brand;
+
+            }
+
+            get cnam(){
+                return this.name;
+            }
+
+            set cnam(x){
+                return this.name = x;
+            }
+        }
+
+        let myCar = new car('Food');
+
+        document.getElementById('inherit').innerHTML= myCar.cnam;
+    </script>
+    
+</body>
+</html>

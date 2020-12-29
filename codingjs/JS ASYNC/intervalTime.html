@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Interval time in 1 millisecons</p>
+    <h1 id="interval"></h1>
+    
+
+    <script>
+        setInterval(myfunction, 1);
+
+        function myfunction(){
+            let a = new Date();
+
+            document.getElementById('interval').innerHTML= a.getHours()+":"+ a.getMinutes()+":"+ a.getSeconds()+":" +a.getMilliseconds() ;
+        }
+
+    </script>
+    
+</body>
+</html>

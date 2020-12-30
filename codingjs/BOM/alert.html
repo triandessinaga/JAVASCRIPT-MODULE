@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Alert </h1>
+    
+    <p id="domo"></p>
+
+<button onclick="myFunction()">Alert</button>
+
+<button onclick="fungsiKedua();"> confirmation</button>
+    <script>
+        function myFunction() {
+            alert('click me guys');
+        }
+
+        function fungsiKedua(){
+            var text;
+
+            if(confirm("press the button")){
+                text = "you are pressed OK";
+            } else {
+            text='you never klik OK';
+        }
+        document.getElementById("domo").innerHTML = text;
+    }
+    
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1> Promt Box</h1>
+    <button onclick="myfunction();">let's get acquainted</button>
+    <p id="name"></p>
+
+    <script>
+
+function myfunction(){
+var txt;
+var person= prompt("What is your name?","")
+if(person==null || person==""){
+    txt = "User doesn't want to be acquainted";
+} else {
+    txt = "Hello "+person+ "\nhow are you?";
+}
+document.getElementById('name').innerHTML=alert(txt);
+}
+
+    </script>
+    
+</body>
+</html>

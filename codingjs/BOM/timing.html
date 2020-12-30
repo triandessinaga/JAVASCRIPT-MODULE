@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> this is timing</h1>
+    <button onclick="">timer</button>
+
+    <p id="time"></p>
+
+    <script>
+       setInterval(myFunction,1);
+        
+        function myFunction(){
+            var x;
+            let y = new Date();
+            document.getElementById('time').innerHTML = y.toLocaleString()+"."+y.getMilliseconds();
+
+        }
+        
+
+        
+    </script>
+    
+</body>
+</html>

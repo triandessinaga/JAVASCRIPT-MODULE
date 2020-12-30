@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>xml http</H1>
+    <button type="button" onclick="loadData();">klik</button>
+    <p id="ajax"></p>
+
+
+    <script>
+        function loadData(){
+            var xml = new XMLHttpRequest();
+            xml.onreadystatechange= function(){
+                if(this.readyState == 4 && this.status== 200){
+                    document.getElementById('ajax').innerHTML = this.responseURL;
+                }
+            };
+            xml.open('GET',"test.html",true);
+            xml.send();
+        }
+    </script>
+</body>
+</html>

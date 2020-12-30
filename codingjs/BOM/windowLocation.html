@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Windod Location</h1>
+
+    <p id="location"></p>
+    <p id="situs"></p>
+    <p id="path"></p>
+<input type="button" value="click this" onclick="loadData()">
+ 
+
+    <script>
+
+        document.getElementById('location').innerHTML = "This is my href location: "+ window.location.href;
+        document.getElementById('situs').innerHTML = " this is hostname :" + window.location.hostname;
+
+        document.getElementById('path').innerHTML = " this is path "+ window.location.port;
+
+        function loadData(){
+            window.location.assign("https://www.sempurnamedilabindonesia.co.id/");
+        }
+
+    </script>
+    
+</body>
+</html>

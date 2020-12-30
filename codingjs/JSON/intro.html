@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>intro</h1>
+    <p id="json"></p>
+
+    <script>
+
+        var data = '{"nama":"rida", "alamat":"medan"}';
+        var obj = JSON.parse(data);
+
+        document.getElementById('json').innerHTML = obj.nama + " " +obj.alamat;
+
+    </script>
+    
+</body>
+</html>

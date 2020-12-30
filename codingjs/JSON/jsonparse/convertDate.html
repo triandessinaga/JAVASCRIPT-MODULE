@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Convert Date String</h1>
+    <p id="json"></p>
+    <script>
+
+var person = '{"name":"rian","birth":"1990-12-18"}';
+var obj = JSON.parse(person);
+obj.birth = new Date(obj.birth);
+document.getElementById('json').innerHTML= obj.name + " "+ obj.birth;
+
+    </script>
+    
+</body>
+</html>

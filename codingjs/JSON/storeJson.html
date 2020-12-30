@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Store JSON</h1>
+    <p id="json"></p>
+
+    <script>
+        var a,b,c,d;
+
+        a = {name:"andi",alamat:"medan"};
+        b =JSON.stringify(a);
+        localStorage.setItem("testJSON",b);
+
+        // end storage
+
+        c = localStorage.getItem("testJSON");
+        d = JSON.parse(c);
+        document.getElementById('json').innerHTML=d.name + " " + d.alamat;
+    </script>
+</body>
+</html>

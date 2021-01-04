@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>WEB API</h1>
+    <button  onclick="getlocation();">Get Location</button>
+    <p id="api"></p>
+
+    <script>
+
+        var x = document.getElementById('api');
+        function getlocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }else{
+                x.innerHTML = "browser is not supported";
+            }
+        }
+
+        function showPosition(position){
+            x.innerHTML = "Latitude: "+ position.coords.latitude +
+            "<br> Longitude:" + position.coords.longitude;
+        }
+
+    </script>
+    
+</body>
+</html>
